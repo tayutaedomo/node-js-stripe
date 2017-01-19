@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/webhook', function(req, res, next) {
   console.log('request headers', req.headers);
-  console.log('request body', req.body);
+  console.log('request body', JSON.stringify(req.body, null, 2));
 
   res.send();
 });
